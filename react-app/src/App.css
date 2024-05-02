@@ -1,0 +1,60 @@
+/* App Container */
+.appContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #1c2d50;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+/* Inner Container */
+.innerContainer {
+  text-align: center;
+  display: flex;
+  /* Use flexbox for inner container */
+  flex-direction: column;
+  /* Stack elements vertically */
+}
+
+/* Input Field */
+.inputField {
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  width: 300px;
+  font-size: 1rem;
+  resize: vertical;
+  /* Allow vertical resizing of textarea */
+}
+
+/* Submit Button */
+.submitButton {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+  /* Add margin between textarea and button */
+}
+
+.submitButton:hover {
+  background-color: #0056b3;
+}
+
+.submitButton:disabled {
+  cursor: not-allowed;
+  background-color: #ccc;
+}
+
+/* Error Message */
+.errorMessage {
+  color: red;
+  margin-top: 10px;
+}
